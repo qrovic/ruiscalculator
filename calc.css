@@ -76,7 +76,7 @@ button{
     }
     body{
         justify-content:center;
-        align-items: center;
+        height: 100svh;
     }
     .op{
         width: 95%;
