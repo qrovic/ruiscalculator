@@ -67,6 +67,7 @@ button{
 button:hover{
     background-color: white;
     color: rgb(47, 46, 61);
+    border-color: color: rgb(47, 46, 61);
 }
 #display{
     font-size:5vw;
