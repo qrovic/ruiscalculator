@@ -73,6 +73,7 @@ button{
 @media screen and (min-width:320px) and (max-width:767px){
     .calc-container{
        justify-content: flex-end; 
+       height: 90svh;
     }
     body{
         justify-content:center;
