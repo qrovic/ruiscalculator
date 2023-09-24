@@ -63,11 +63,16 @@ button{
     background-color: rgb(92, 91, 107);
     color: white;
     border-radius: 10px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 button:hover{
     background-color: white;
     color: rgb(47, 46, 61);
-    border-color: color: rgb(47, 46, 61);
+    border-color: rgb(47, 46, 61);
+    
+}
+button:active{
+    transform: scale(0.9);
 }
 #display{
     font-size:5vw;
@@ -79,6 +84,7 @@ button:hover{
     .calc-container{
        justify-content: flex-end; 
        height: 100svh;
+       padding-bottom: 10px;
     }
     body{
         justify-content:center;
@@ -100,26 +106,48 @@ button:hover{
         background-color: transparent;
         text-align:right;
         border: 0px;
-        white-space: nowrap; /* Prevent text from wrapping */
-        overflow: hidden; /* Hide text overflow */
+        white-space: nowrap; 
+        overflow: hidden; 
         text-overflow: ellipsis;
         
     }
 }
 @media screen and (min-width:768px) and (max-width:991px){
     .calc-container{
-        margin: 20px;
-        border-radius: 20px;
-        width:90vw;
-        height: fit-content;
+        justify-content: flex-end; 
+        height: 100svh;
+        padding-bottom: 20px;
+   
+    }
+    body{
+        justify-content:center;
+        height: 100svh;
+    }
+    .op{
+        width: 95%;
+        height: 65vh;
+        
+        display: flex;
+        flex-direction: column;
+        
     }
     #display{
-        margin-top: 20px;
-        width: 85vw;
-        height: 20vh;
-    }
+        width: 90vw;
+        height: 10vh;
+        font-size:8vh;
+        padding: 0px 20px;
+        background-color: transparent;
+        text-align:right;
+        border: 0px;
+        white-space: nowrap;
+        overflow: hidden; 
+        text-overflow: ellipsis;
+        
+    }    
+      
+   
 }
-@media screen and (min-width:992px) and (max-width:9999px){
+@media screen and (min-width:992px) and (max-width:9999999px){
     .calc-container{
         margin: 20px;
         border-radius: 20px;
